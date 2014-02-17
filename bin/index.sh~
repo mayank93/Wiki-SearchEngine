@@ -1,0 +1,5 @@
+#!/bin/bash
+./parse $1 $2 ../src/index/stopwords.txt
+indexfile='/index.txt'
+sortedfile='/sortedindex.txt'
+sort -k $2$indexfile > $2$sortedfile
